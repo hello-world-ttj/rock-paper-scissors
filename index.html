@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-glyphs/30/000000/square-brackets.png"
+        type="image/x-icon">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Rock <img src="https://img.icons8.com/emoji/48/000000/rock-emoji.png" /> Paper <img
+                src="https://img.icons8.com/fluency/48/000000/paper.png" /> Scissor <img
+                src="assets/images/scissor.gif" />
+        </h1>
+        <div class="start">
+            <button class="start-btn" onclick="renderGame()">START GAME</button>
+            <div class="container" id="container" style="visibility: hidden;">
+                <div class="flex-row">
+                    <div class="cards" id="cards">
+                        <img id="rock" class="card-img-top" src="assets/images/rock.png" alt="Rock"
+                            onclick="selectedCard(this)">
+                        <img id="paper" class="card-img-top" src="assets/images/paper.png" alt="Paper"
+                            onclick="selectedCard(this)">
+                        <img id="scissor" class="card-img-top" src="assets/images/scissor.png" alt="Scissor"
+                            onclick="selectedCard(this)">
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <span>© hello_world.ttj</span>
+            </footer>
+            <script src="assets/js/index.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
