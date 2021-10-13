@@ -1,13 +1,20 @@
 let startBtn = document.querySelector('.start-btn')
 let rps = []
 let bot = Math.floor( Math.random()*3 )
-
-
 let container = document.querySelector('#container')
 
 function renderGame() {
     container.attributes[2].nodeValue = "visibility: visible;"
     startBtn.remove()
+    reStart()
+}
+
+function reStart() {
+    let restart = document.createElement('button')
+    restart.innerHTML = "REFRESH"
+    document.querySelector('.game').appendChild(restart)
+    restart.setAttribute('class', 'start-btn')
+    restart.setAttribute('onclick', 'location.reload()')
 }
 
 
