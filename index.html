@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="https://img.icons8.com/ios-glyphs/30/000000/square-brackets.png"
         type="image/x-icon">
-    <title>Rock Paper Scissor</title>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
     <div class="container">
         <h1 class="title">Rock <img src="https://img.icons8.com/emoji/48/000000/rock-emoji.png" /> Paper <img
-                src="https://img.icons8.com/fluency/48/000000/paper.png" /> Scissor <img
+                src="https://img.icons8.com/fluency/48/000000/paper.png" /> Scissors <img
                 src="assets/images/scissor.gif" />
         </h1>
         <div class="start">
-            <button class="start-btn" onclick="renderGame()">START GAME</button>
+            <div class="game">
+                <button class="start-btn" onclick="renderGame()">START GAME</button>
+            </div>
             <div class="container" id="container" style="visibility: hidden;">
                 <div class="flex-row">
                     <div class="cards" id="cards">
